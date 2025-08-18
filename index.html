@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cycle Simulation Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <h2>Cycle Simulation</h2>
+    <nav>
+      <a href="#" onclick="showPage('home')">HOME</a>
+      <a href="#" onclick="showPage('about')">ABOUT</a>
+      <a href="#" onclick="showPage('profile')">PROFILE</a>
+    </nav>
+  </header>
+
+  <!-- WELCOME PAGE -->
+  <section id="home" class="active">
+    <h1>Welcome!</h1>
+    <p>You are now the CEO of a very established company within your industry.<br>
+       Your key focus is to attend to sustainability goals as much as profit.<br><br>
+       <strong>CAN YOU DO IT?</strong>
+    </p>
+    <a class="btn" onclick="showPage('profile')">Start Game</a>
+  </section>
+
+  <!-- PROFILE PAGE -->
+  <section id="profile">
+    <h1>Profile Setup</h1>
+    <p>Enter your CEO details:</p>
+    <form onsubmit="startGame(event)">
+      <input type="text" placeholder="Your CEO Name" id="ceoName" required /><br><br>
+      <input type="text" placeholder="Your Industry" id="industry" required /><br><br>
+      <input type="text" placeholder="Your Company Name" id="company" required /><br><br>
+      <button type="submit" class="btn">Continue</button>
+    </form>
+  </section>
+
+  <!-- ROUND EXAMPLE -->
+  <section id="round1">
+    <h1>ROUND 01</h1>
+    <div class="dashboard">
+      <h2>Dashboard</h2>
+      <div class="scores">
+        <div>E: <span id="scoreE">50</span></div>
+        <div>S: <span id="scoreS">50</span></div>
+        <div>G: <span id="scoreG">50</span></div>
+        <div>Profit: $<span id="profit">1,000,000</span></div>
+      </div>
+      <h3>Supplier Troubles!</h3>
+      <p>Oh no! Something happened to your supplier, and now you must decide...</p>
+      <a class="btn" onclick="makeDecision('A')">Decision A</a>
+      <a class="btn" onclick="makeDecision('B')">Decision B</a>
+      <a class="btn" onclick="makeDecision('C')">Decision C</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
