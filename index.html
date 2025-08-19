@@ -8,33 +8,46 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <h2>Cycle Simulation</h2>
-    <nav>
-      <a href="#" onclick="showPage('home')">HOME</a>
-      <a href="#" onclick="showPage('about')">ABOUT</a>
-      <a href="#" onclick="showPage('profile')">PROFILE</a>
-    </nav>
-  </header>
-
   <!-- WELCOME PAGE -->
   <section id="home" class="active">
-    <h1>Welcome!</h1>
-    <p>You are now the CEO of a very established company within your industry.<br>
-       Your key focus is to attend to sustainability goals as much as profit.<br><br>
-       <strong>CAN YOU DO IT?</strong>
+    <h2>WELCOME!</h2>
+    <h1>CYCLE SIMULATION</h1>
     </p>
-    <a class="btn" onclick="showPage('profile')">Start Game</a>
+    <a class="btn" onclick="showPage('explain')">Start</a>
   </section>
+
+  <!-- EXPLAIN PAGE -->
+    <!-- NAVBAR -->
+      <header id="navs">
+        <nav id="navbar">
+          <a href="#" onclick="showPage('home')">HOME</a>
+          <a href="#" onclick="showPage('about')">ABOUT</a>
+       </nav>
+      </header>
+  
+  <section id="explain">
+    <h1> WHAT'S UP, BOSS?!</h1>
+    <p>You are now the CEO of a very fancy, very established company within your industry.<br>
+      Your key focus is to attend to your sustainability goals while keeping up with your profits.<br><br>
+  
+      <a class="btn" onclick="showPage('profile')">CAN YOU DO IT?</a>
+
+  </section>
+
 
   <!-- PROFILE PAGE -->
   <section id="profile">
-    <h1>Profile Setup</h1>
-    <p>Enter your CEO details:</p>
+    <h1>Profile </h1>
+    <p>Let's set up your CEO details and your industry of choice:</p>
     <form onsubmit="startGame(event)">
       <input type="text" placeholder="Your CEO Name" id="ceoName" required /><br><br>
-      <input type="text" placeholder="Your Industry" id="industry" required /><br><br>
+        <select id="industry" name="industry" required>
+          <option value="" disabled selected> Your industry</option>
+          <option value="fashion">Fashion</option>
+          <option value="food">Food Retail</option>
+          <option value="tech">Tech</option>
+        </select>
+<br><br>
       <input type="text" placeholder="Your Company Name" id="company" required /><br><br>
       <button type="submit" class="btn">Continue</button>
     </form>
@@ -62,3 +75,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!-- ABOUT PAGE -->
