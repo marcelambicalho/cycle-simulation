@@ -1,0 +1,136 @@
+ @font-face {
+  font-family: 'Press Start 2P';
+  src: url('fonts/press-start-2p.woff2') format('woff2'),
+  font-weight: normal;
+  font-style: normal;
+  }
+
+body {
+    font-family: "Press Start 2P", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #A8D67C;
+    color: #222;
+    text-align: center;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    display: none;
+  }
+  
+  section.active {
+    display: block;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background: darkgreen;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .explain-card{
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .profile-card{
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .round-card {
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+  }
+
+  .congrats-card {
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .over-card {
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .csr-card {
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .round-block{
+    display: flex;
+    column-gap: 20px; 
+  }
+
+  .scores {
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .scores div {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 0.5rem;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
