@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background: #A8D67C;
-    color: #222;
+    color: black;
     text-align: center;
   }
   
@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111;
+    background: darkgreen;
     color: white;
     padding: 1rem 2rem;
   }
@@ -27,6 +27,7 @@ body {
   nav a {
     margin: 0 1rem;
     color: white;
+    background-color: darkgreen;
     text-decoration: none;
     font-weight: bold;
   }
