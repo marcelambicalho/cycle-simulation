@@ -10,10 +10,16 @@ body {
     margin: 0;
     padding: 0;
     background: #A8D67C;
-    color: black;
     text-align: center;
   }
   
+  h1{
+    color: #1b3203;
+  }
+
+  h2{
+    color: #1b3203;
+  }
 
   header {
     display: flex;
@@ -55,7 +61,7 @@ body {
   }
 
   .explain-card{
-    background: white;
+    background: #4f722a;
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 15px;
@@ -64,7 +70,7 @@ body {
   }
   
   .profile-card{
-    background: white;
+    background: #4f722a;
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 15px;
@@ -73,7 +79,7 @@ body {
   }
 
   .round-card {
-    background: white;
+    background: #4f722a;
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 15px;
@@ -83,7 +89,7 @@ body {
   }
 
   .congrats-card {
-    background: white;
+    background: #4f722a;
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 15px;
@@ -92,7 +98,7 @@ body {
   }
 
   .over-card {
-    background: white;
+    background: #4f722a;
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 15px;
@@ -101,7 +107,7 @@ body {
   }
   
   .csr-card {
-    background: white;
+    background: #4f722a;
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 15px;
@@ -115,7 +121,7 @@ body {
   }
 
   .scores {
-    background: white;
+    background: #4f722a;
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 15px;
