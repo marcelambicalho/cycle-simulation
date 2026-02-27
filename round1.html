@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,36 +13,27 @@
   </style>
   </head>
 
+<!-- ROUND ONE PAGE -->
 <body>
-
-  <!-- WELCOME PAGE -->
-  <section id="home" class="active">
-    <h2>WELCOME!</h2>
-    <h1>CYCLE SIMULATION</h1>
-    </p>
-    <a href="explain.html" class="btn">Start</a>
-  </section>
-
-  <!-- CSR REPORT -->
-    <section id="csr-page">
-      <h1> CSR REPORT </h1>
-      <div class="csr-card">
-        <p> A Corporate Social Responsibility Report is a document made by accredited organisations for businesses, to assess if their sustainable goals align with their practces. </p>
+    <h1>ROUND 01</h1>
+    <div class="round-block">
+      <div class="round-card">
+        <h2>SUPPLIER TROUBLES!</h2>
+        <p>Oh no! Something happened to your supplier, and now you must decide...</p>
+        <a class="btn" onclick="makeDecision('A')">Decision A</a>
+        <a class="btn" onclick="makeDecision('B')">Decision B</a>
+        <a class="btn" onclick="makeDecision('C')">Decision C</a>
       </div>
-
       <div class="scores">
-        <h1> FINAL SCORES </h1>
+        <h1> SCORES </h1>
         <div>E: <span id="scoreE">50</span></div>
         <div>S: <span id="scoreS">50</span></div>
         <div>G: <span id="scoreG">50</span></div>
         <div>Profit: $<span id="profit">1,000,000</span></div>
       </div>
+    </div>
+    <a href="round2.html" class="btn" >Continue </a>
 
-      <a class="btn" onclick="showPage('home')">Restart</a>
-      
-    </section>
-
-
-  <script src="script.js"></script>
+      <script src="script.js"></script>
 </body>
 </html>

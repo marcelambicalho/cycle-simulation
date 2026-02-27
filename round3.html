@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cycle Simulation Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+  <style>
+  body {
+      font-family: 'Press Start 2P';font-size: 22px;
+  }
+  </style>
+  </head>
+
+
+<!-- ROUND THREE PAGE -->
+
+<body> 
+
+    <h1>ROUND 03</h1>
+
+    <div class="round-block"> 
+      <div class="round-card">
+        <h2>THE SUPER INVESTOR</h2>
+      <p>You got three new stocks, fresh out of the market, to acquire! One is easy money, but tainted hands, the other is neither and the other is suspisiously good...</p>
+      <a class="btn" onclick="makeDecision('A')">Decision A</a>
+        <a class="btn" onclick="makeDecision('B')">Decision B</a>
+        <a class="btn" onclick="makeDecision('C')">Decision C</a>
+     </div>
+
+      <div class="scores">
+        <h1> SCORES </h1>
+        <div>E: <span id="scoreE">50</span></div>
+        <div>S: <span id="scoreS">50</span></div>
+        <div>G: <span id="scoreG">50</span></div>
+        <div>Profit: $<span id="profit">1,000,000</span></div>
+      </div>
+    </div>
+
+    <a href="youwin.html" class="btn" >Continue </a>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

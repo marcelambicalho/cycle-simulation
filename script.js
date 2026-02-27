@@ -23,7 +23,7 @@
     <a href="#" onclick="showPage('about')">ABOUT</a>
   `;
   
-    if (pageId === "round1") {
+    if (pageId === "round1.html") {
       navbar.innerHTML = dashboardNav;
     } else {
       navbar.innerHTML = defaultNav;
